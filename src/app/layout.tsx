@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
+  verification: {
+    google: "WJfsQ2_qRNJmlkRiUTtLJ4SOtunciiV5nMdTX7ED86w",
+  },
 };
 
 const organizationSchema = {
