@@ -1,5 +1,7 @@
 # PlayZone — Free Online Games
 
+🌐 **Play now:** https://games.tempmaill.tech
+
 A Next.js 16 games portal (CrazyGames-style, smaller). Dark gaming theme, 12 fully playable
 HTML5 games, SEO-ready, AdSense-ready.
 
@@ -49,3 +51,10 @@ npm install
 npm run dev
 npm run build
 ```
+
+## Our Sites
+
+- [PlayZone](https://games.tempmaill.tech) — free online games
+- [Temp Mail](https://tempmaill.tech) — free temporary email addresses
+- [Frinjo](https://frinjo.me) — web development agency
+- [WebStore Dev](https://tarm.tech) — web development agency
