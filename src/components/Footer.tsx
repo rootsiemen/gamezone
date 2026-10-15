@@ -46,6 +46,13 @@ export default function Footer() {
             <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
           </ul>
         </nav>
+        <nav aria-label="Our sites">
+          <p className="mb-3 text-sm font-bold uppercase tracking-wider text-white">Our Sites</p>
+          <ul className="space-y-2 text-sm text-[#a3adc9]">
+            <li><a href="https://tempmaill.tech" target="_blank" rel="noopener" className="hover:text-white">Temp Mail — Free Disposable Email</a></li>
+            <li><a href="https://frinjo.me" target="_blank" rel="noopener" className="hover:text-white">Frinjo — Web Development</a></li>
+          </ul>
+        </nav>
       </div>
       <div className="border-t border-[#232b4d] py-4 text-center text-xs text-[#a3adc9]/70">
         © {new Date().getFullYear()} PlayZone — Free Online Games. All games are free to play.
