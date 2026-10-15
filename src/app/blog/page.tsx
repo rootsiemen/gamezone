@@ -3,7 +3,7 @@ import Link from "next/link";
 import { POSTS, formatPostDate } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Gaming Blog — Tips, Lists & Browser Game News | PlayZone",
+  title: "Gaming Blog — Tips, Lists & Browser Game News",
   description:
     "PlayZone blog: best free browser games, gaming tips, and why browser gaming is booming. Fresh articles for casual gamers.",
   alternates: { canonical: "https://games.tempmaill.tech/blog" },
