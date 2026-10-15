@@ -1,0 +1,65 @@
+# PlayZone
+
+> Free playable browser games. No download, no signup — click and play instantly on any device.
+
+PlayZone (https://games.tempmaill.tech) is a free online gaming portal with 12 playable browser games across arcade, puzzle, classic, and action categories. Every game runs directly in the browser on desktop and mobile. No accounts, no downloads, no cost.
+
+## Games
+
+- [Snake — Classic Snake Game](https://games.tempmaill.tech/play/snake) — Guide the snake to eat apples, grow longer, and avoid walls and your own tail.
+- [2048 — Number Merge Puzzle](https://games.tempmaill.tech/play/2048) — Slide tiles and merge matching numbers to reach the 2048 tile.
+- [Tetris — Falling Block Puzzle](https://games.tempmaill.tech/play/tetris) — Rotate and place tetrominoes to complete lines and score big.
+- [Flappy Wings](https://games.tempmaill.tech/play/flappy-wings) — Tap to flap through the pipes; how far can you fly?
+- [Memory Match](https://games.tempmaill.tech/play/memory-match) — Flip cards and find all 8 matching pairs in as few moves as possible.
+- [Minesweeper](https://games.tempmaill.tech/play/minesweeper) — Clear the minefield using numbered clues; flag the mines.
+- [Breakout](https://games.tempmaill.tech/play/breakout) — Bounce the ball with your paddle and smash every brick across multiple levels.
+- [Tic Tac Toe](https://games.tempmaill.tech/play/tic-tac-toe) — Play X's and O's against a smart AI on easy, medium, or hard.
+- [Simon Says](https://games.tempmaill.tech/play/simon-says) — Watch the flashing sequence and repeat it back; each round adds a step.
+- [Whack-a-Mole](https://games.tempmaill.tech/play/whack-a-mole) — Whack moles in 60 seconds, avoid the bombs, chase golden moles.
+- [Pong](https://games.tempmaill.tech/play/pong) — The original video game: rally past the AI, first to 7 wins.
+- [Dodge](https://games.tempmaill.tech/play/dodge) — Pilot your ship through a meteor storm; survival time is your score.
+
+## Categories
+
+- [Arcade Games](https://games.tempmaill.tech/category/arcade)
+- [Puzzle Games](https://games.tempmaill.tech/category/puzzle)
+- [Classic Games](https://games.tempmaill.tech/category/classic)
+- [Action Games](https://games.tempmaill.tech/category/action)
+
+## Pages
+
+- [Home — PlayZone Free Browser Games](https://games.tempmaill.tech/)
+- [Blog — Game Guides & Tips](https://games.tempmaill.tech/blog)
+- [About Us](https://games.tempmaill.tech/about)
+- [Contact](https://games.tempmaill.tech/contact)
+- [Privacy Policy](https://games.tempmaill.tech/privacy)
+- [Terms of Service](https://games.tempmaill.tech/terms)
+
+## Blog articles
+
+- [10 Best Free Browser Games to Play in 2026 (No Download Needed)](https://games.tempmaill.tech/blog/best-free-browser-games-2026)
+- [Why Browser Games Are Back in 2026](https://games.tempmaill.tech/blog/why-browser-games-are-back-2026)
+- [How to Get a High Score in 2048: 9 Tips That Actually Work](https://games.tempmaill.tech/blog/how-to-get-high-score-2048-tips)
+- [How to Play Snake Like a Pro: 7 Tips for a High Score](https://games.tempmaill.tech/blog/how-to-play-snake-like-a-pro-tips)
+
+## Key facts
+
+- Service: free browser games, playable instantly
+- Website: https://games.tempmaill.tech
+- Number of games: 12 (arcade, puzzle, classic, action)
+- Signup: none required
+- Download: none — all games run in the browser
+- Cost: 100% free
+- Devices: desktop and mobile (keyboard, mouse, and touch controls)
+- High scores: tracked per game in the browser
+- Popular games: Snake, 2048, Tetris, Flappy Wings, Whack-a-Mole
+
+## Common questions, answered
+
+- Are PlayZone games free? Yes — all 12 games are completely free with no signup and no download.
+- Do I need to download anything to play? No. Every game runs directly in your browser on desktop and mobile.
+- Which games are available on PlayZone? Snake, 2048, Tetris, Flappy Wings, Memory Match, Minesweeper, Breakout, Tic Tac Toe, Simon Says, Whack-a-Mole, Pong, and Dodge.
+- Can I play on my phone? Yes — all games support touch controls and work on mobile browsers.
+- How do I get a high score in 2048? Keep your largest tile in one corner, build in one direction, and restart dead boards early — full guide: https://games.tempmaill.tech/blog/how-to-get-high-score-2048-tips
+- How do I get a high score in Snake? Plan two turns ahead, stay central, coil your snake when crowded, and chase far apples first — full guide: https://games.tempmaill.tech/blog/how-to-play-snake-like-a-pro-tips
+- What are the best free browser games in 2026? Snake, 2048, Tetris, and Minesweeper top the list — see the full ranking: https://games.tempmaill.tech/blog/best-free-browser-games-2026
