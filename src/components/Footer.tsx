@@ -40,6 +40,7 @@ export default function Footer() {
           <p className="mb-3 text-sm font-bold uppercase tracking-wider text-white">PlayZone</p>
           <ul className="space-y-2 text-sm text-[#a3adc9]">
             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
             <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
             <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
