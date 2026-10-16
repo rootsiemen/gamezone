@@ -1,10 +1,8 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 import { GAMES, CATEGORIES, searchGames } from "@/lib/games";
 import GameCard from "@/components/GameCard";
 import Link from "next/link";
+
+const SITE_URL = "https://games.tempmaill.tech";
 
 function Section({
   id,
@@ -41,37 +39,59 @@ function Section({
   );
 }
 
-function HomeContent() {
-  const params = useSearchParams();
-  const q = params.get("q") || "";
+function SearchResults({ q }: { q: string }) {
   const results = searchGames(q);
+  return (
+    <div className="mx-auto max-w-[1400px] px-4 py-6">
+      <h1 className="text-2xl font-extrabold text-white">Search results for &ldquo;{q}&rdquo;</h1>
+      <p className="mt-1 text-sm text-[#a3adc9]">
+        {results.length} game{results.length !== 1 ? "s" : ""} found
+      </p>
+      {results.length === 0 ? (
+        <p className="mt-6 text-[#a3adc9]">No games found. Try &ldquo;snake&rdquo;, &ldquo;puzzle&rdquo;, or &ldquo;tetris&rdquo;.</p>
+      ) : (
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+          {results.map((g) => (
+            <GameCard key={g.slug} game={g} />
+          ))}
+        </div>
+      )}
+      <Link href="/" className="mt-6 inline-block text-sm font-bold text-[#7c6cf8] hover:text-[#9a8fff]">
+        ← Back to all games
+      </Link>
+    </div>
+  );
+}
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Free Online Games on PlayZone",
+  description: "Every free browser game on PlayZone — arcade, puzzle, classic, and action.",
+  itemListElement: GAMES.map((g, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: g.title,
+    url: `${SITE_URL}/play/${g.slug}`,
+  })),
+};
+
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const { q } = await searchParams;
+  if (q) return <SearchResults q={q} />;
 
   const trending = GAMES.filter((g) => g.popular);
   const featured = GAMES.filter((g) => g.featured);
   const newest = [...GAMES].reverse().slice(0, 6);
 
-  if (q) {
-    return (
-      <div className="mx-auto max-w-[1400px] px-4 py-6">
-        <h1 className="text-2xl font-extrabold text-white">Search results for “{q}”</h1>
-        <p className="mt-1 text-sm text-[#a3adc9]">
-          {results.length} game{results.length !== 1 ? "s" : ""} found
-        </p>
-        {results.length === 0 ? (
-          <p className="mt-6 text-[#a3adc9]">No games found. Try “snake”, “puzzle”, or “tetris”.</p>
-        ) : (
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-            {results.map((g) => (
-              <GameCard key={g.slug} game={g} />
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-6">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+
       {/* Slim welcome strip */}
       <div className="rounded-2xl border border-[#2a3560] bg-gradient-to-r from-[#232b4d] to-[#1b2138] px-6 py-5">
         <h1 className="text-2xl font-extrabold text-white sm:text-3xl">
@@ -108,13 +128,5 @@ function HomeContent() {
         </p>
       </section>
     </div>
-  );
-}
-
-export default function Home() {
-  return (
-    <Suspense fallback={<div className="p-8 text-center text-[#a3adc9]">Loading games…</div>}>
-      <HomeContent />
-    </Suspense>
   );
 }

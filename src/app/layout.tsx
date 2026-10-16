@@ -9,7 +9,7 @@ const SITE_NAME = "PlayZone";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "PlayZone — Free Online Games",
+    default: "PlayZone: Free Online Games — Play Instantly, No Download",
     template: "%s | PlayZone",
   },
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   authors: [{ name: "PlayZone" }],
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "PlayZone — Free Online Games",
+    title: "PlayZone: Free Online Games — Play Instantly, No Download",
     description: "Play free online games instantly in your browser. No downloads, no signup.",
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PlayZone — Free Online Games",
+    title: "PlayZone: Free Online Games — Play Instantly, No Download",
     description: "Play free online games instantly in your browser. No downloads, no signup.",
   },
   robots: {

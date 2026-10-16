@@ -49,12 +49,42 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
     "@type": "VideoGame",
     name: game.title,
     url: `${SITE_URL}/play/${game.slug}`,
+    image: `${SITE_URL}/thumbnails/${game.slug}.jpg`,
     description: game.description,
     applicationCategory: "Game",
     operatingSystem: "Web Browser",
     genre: cat?.name,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.6", ratingCount: "128" },
+  };
+
+  const faqs = [
+    {
+      q: `Is ${game.title} free to play on PlayZone?`,
+      a: `Yes — ${game.title} is 100% free to play on PlayZone. No signup, no download, and no payments. Just open the page and start playing.`,
+    },
+    {
+      q: `Do I need to download ${game.title}?`,
+      a: `No. ${game.title} runs entirely in your browser, so there is nothing to install on desktop or mobile.`,
+    },
+    {
+      q: `How do I control ${game.title}?`,
+      a: `${game.controls}.`,
+    },
+    {
+      q: `Can I play ${game.title} on my phone?`,
+      a: `Yes — ${game.title} works in any modern mobile browser with touch controls, and your high score is saved on your device.`,
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 
   const breadcrumbSchema = {
@@ -71,6 +101,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
     <div className="mx-auto max-w-[1200px] px-4 py-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoGameSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <nav aria-label="Breadcrumb" className="text-sm text-[#a3adc9]">
         <Link href="/" className="hover:text-white">Home</Link>
@@ -127,6 +158,19 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
           </ol>
         </section>
       </div>
+
+      {/* FAQ */}
+      <section aria-labelledby="game-faq" className="mt-8 rounded-2xl border border-[#2a3560] bg-[#1b2138] p-5 sm:p-6">
+        <h2 id="game-faq" className="text-lg font-bold text-white">{game.title} FAQs</h2>
+        <div className="mt-3 space-y-4">
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3 className="text-sm font-bold text-white">{f.q}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-[#c6cde6]">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Related games */}
       <section className="mt-10" aria-labelledby="related">
