@@ -27,11 +27,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url,
       siteName: "PlayZone",
       type: "website",
+      images: [{ url: `${SITE_URL}/thumbnails/${game.slug}.jpg`, alt: `Play ${game.title} online free` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `Play ${game.title} Online — Free | PlayZone`,
       description: game.description,
+      images: [`${SITE_URL}/thumbnails/${game.slug}.jpg`],
     },
   };
 }

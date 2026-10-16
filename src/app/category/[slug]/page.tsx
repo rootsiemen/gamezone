@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url,
       siteName: "PlayZone",
       type: "website",
+      images: [{ url: `${SITE_URL}/opengraph-image.jpg`, alt: `Free ${cat.name} games on PlayZone` }],
     },
   };
 }
