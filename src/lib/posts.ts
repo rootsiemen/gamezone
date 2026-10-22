@@ -1382,6 +1382,102 @@ export const POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-get-high-score-breakout-tips",
+    title: "How to Get a High Score in Breakout: 9 Tips That Actually Work",
+    excerpt:
+      "How to get a high score in Breakout: 9 practical tips on paddle geometry, the tunnel trick, and brick math — turn a 5,000-point run into 50,000.",
+    date: "2026-10-21",
+    readMinutes: 9,
+    emoji: "🧱",
+    content: [
+      {
+        paragraphs: [
+          "Learning how to get a high score in Breakout feels like a reflex problem until you realize the whole game is just three numbers: the ball's speed, the angle you give it, and how many bricks sit between the ball and the ceiling. Most players stall around 5,000 points doing the same thing — chasing the ball with big, panicked paddle swings. This guide breaks down what actually works, with the geometry and the math behind each move.",
+          "A quick orientation for the uninitiated: Breakout is the 1976 arcade classic — a paddle, a bouncing ball, and a wall of colored bricks. Every brick you smash scores points, every ball you miss costs a life, and the ball gets faster as the wall thins. You win by clearing the wall; you score by clearing it smart. Every tip below serves those two goals. You can practice every one of them on [Breakout](https://games.tempmaill.tech/play/breakout) right here on PlayZone — no download, no signup.",
+        ],
+      },
+      {
+        heading: "Tip 1: The paddle is a steering wheel — hit with the thirds",
+        paragraphs: [
+          "Most players treat the paddle like a wall: ball comes down, paddle blocks it, ball goes back up. Wrong model. The paddle is a steering wheel. Where the ball strikes the paddle decides the rebound angle — hit with the center and the ball climbs nearly straight up; hit with the far left or far right edge and it launches off at a steep diagonal. You are not blocking the ball. You are choosing where it goes next.",
+          "Think of the paddle as three zones. Strike with the left third and the ball climbs up-left, roughly 50 to 60 degrees off the horizontal. Strike with the middle third and it climbs near-vertical, close to 80 or 90 degrees. Strike with the right third and it climbs up-right. The angle math matters because a shallow, diagonal ball spends far more time in the brick field per bounce — crossing two or three columns on the way up and another two or three on the way down — while a vertical ball punches one clean hole and comes straight back. Diagonal strikes clear more bricks per bounce; vertical strikes clear faster but demand more bounces.",
+          "Practical drill: spend your next five runs aiming every return with a specific zone on purpose. Ball falling over the left half of the screen? Do not just catch it — catch it with the paddle's right third, so it launches up-right across the wall's untouched side. Five deliberate runs of this and you will feel the shift: you are no longer returning the ball, you are aiming it. The pros do not have faster reflexes than you. They just decide the ball's destination before it arrives.",
+        ],
+      },
+      {
+        heading: "Tip 2: The tunnel trick — bore one column, then let physics do the paperwork",
+        paragraphs: [
+          "Every Breakout veteran knows the tunnel, and almost no casual player uses it. The idea: instead of chipping the wall evenly, concentrate every early shot on one narrow vertical column until the ball punches clean through to the ceiling. Once the ball is above the wall, the ceiling and the brick tops form a pinball trap — the ball bounces between them, smashing a brick on nearly every contact, with zero paddle input from you. The ball is farming bricks while you watch.",
+          "Here is why it is the highest-scoring move in the game. An average tunnel run takes about 10 to 15 aimed hits to break through — roughly 20 seconds of deliberate play. After that, the ball spends 10 to 30 seconds bouncing above the wall, clearing a brick every half-second or so. That is 20 to 60 bricks destroyed with no risk to your lives, no paddle movement, and — critically — the high-value top rows getting cleared first. One good tunnel visit can account for half the points in an entire level.",
+          "How to build it: pick the column directly above your starting position, and steer every return toward it using the thirds from Tip 1. Do not get distracted clearing side bricks — side bricks are a tax on your attention. The moment the ball slips through and the bounce pattern above the wall begins, stop steering entirely. Just park the paddle under the tunnel's exit and wait. You will feel like you are doing nothing. That is the point — you have turned the game into your employee.",
+        ],
+      },
+      {
+        heading: "Tip 3: Brick economics — clear the top rows first and the math pays you double",
+        paragraphs: [
+          "Not all bricks are priced equally. In classic Breakout scoring — which most browser versions copy — the top two rows are worth 7 points each, the next two worth 5, then 3, and the bottom two worth just 1 point. A 6-row, 14-column wall holds 84 bricks: clearing the bottom two rows first earns 28 points; clearing the top two rows first earns 196. Same number of bricks, seven times the money.",
+          "The tunnel trick exists partly because of this price ladder. Getting the ball above the wall is how you reach the 7-point bricks while the ball is still slow and your lives are still intact. Players who clear bottom-up — the intuitive approach, smashing whatever the ball happens to hit — earn the cheapest bricks first and the expensive ones last, exactly backwards from how the game rewards you. Work the pricing, not your instincts.",
+          "There is a second, sneakier reason top-first wins: time above the wall is safe time. While the ball bounces between the ceiling and the brick tops, it cannot fall past your paddle — it is physically trapped above the play zone. Every second the ball spends up there is a second with zero risk of losing a life. So top-first scoring is also risk-free scoring. The game's economy and its physics agree: the tunnel is the whole business model.",
+        ],
+      },
+      {
+        heading: "Tip 4: The 60% rule — stop chasing, start parking",
+        paragraphs: [
+          "Watch a beginner play and you will see the paddle spend the whole run in motion, jerking left and right after the ball like it owes it money. Watch a high-score player and the paddle barely moves. The difference is the 60% rule: for roughly 60% of any run — every moment the ball is above the brick wall or climbing away from you — the correct paddle position is parked, not moving. Move only when the ball is descending below the lowest remaining brick.",
+          "The reason is reaction math. Human reaction time is about 250 milliseconds, and a fast Breakout ball can cross the screen in under 500. If you wait to react to the ball's final descent, you are already late — you need to be positioned before it commits. Parking the paddle under the ball's predicted landing point (slightly left or right of center, mirroring the ball) beats chasing it after the fact, every single time. Chasing adds errors; parking removes them.",
+          "The safety version of this: when the ball is coming down fast and you are out of position, do not sprint for a perfect catch — sprint for the corner it is falling toward and park at the wall. A ball falling near the edge can only escape past one side of your paddle, which halves the geometry you have to cover. It is the least elegant save in the book and it works disturbingly often.",
+        ],
+      },
+      {
+        heading: "Tip 5: Multiball is a score printer — but only if you track the slowest ball",
+        paragraphs: [
+          "Most Breakout versions hand out multiball power-ups, and most players treat them like chaos: three balls everywhere, paddle flailing, life lost in nine seconds. Multiball is not chaos. It is a score printer. Three balls clear bricks at roughly three times the rate of one — every second of survival with three balls in play is three seconds of scoring. A single good 30-second multiball phase can add 10,000+ points, more than an entire careful level.",
+          "The survival trick is counterintuitive: ignore the fast balls. Of your three balls, one is always closest to the paddle — usually the slowest, lowest one — and that is the only ball that can kill you. The other two are free agents clearing bricks on your behalf. Lock your eyes on the lowest ball, keep your paddle under it, and let the others do their work unattended. The moment you try to track all three, you track none of them.",
+          "One warning: never trigger multiball deliberately when the wall is almost clear. The endgame wall — a handful of scattered bricks — turns multiball from a printer into a liability, because three balls bouncing off a nearly empty field spend most of their time falling, not smashing. Multiball wants a full wall to chew on. Fire it early, when the brick field is dense and every bounce pays.",
+        ],
+      },
+      {
+        heading: "Tip 6: How to get a high score in Breakout — manage the speed curve",
+        paragraphs: [
+          "The ball does not stay at one speed. As bricks disappear and levels advance, the ball accelerates — by the late game it can be 30 to 40 percent faster than your opening ball, and every level-up adds another step. This is where most runs die: the player who was comfortably parking the paddle at level one is suddenly chasing at level three, over-correcting, and dying to their own panic. Speed kills runs long before it kills balls.",
+          "The fix is smaller inputs, not faster reflexes. When the ball speeds up, shrink your paddle movements — nudge, do not swing. A 5-pixel adjustment beats a 50-pixel lunge, because the lunge usually needs a second correction, and at high speed you do not get a second correction. Touch players know this from our [Flappy Bird high-score guide](https://games.tempmaill.tech/blog/how-to-get-high-score-flappy-bird-tips) — the same tap-discipline math: small, early corrections beat big, late ones in every reflex game ever made.",
+          "Also: the speed curve is predictable, so front-load your aggression. Take your risks — tunnel attempts, steep angle shots, power-up grabs — in the first two levels while the ball is slow and forgiving. By level three, your job changes from scoring to surviving: park, catch, and let the tunnel do the work. Score fast early, play boring late. The leaderboard belongs to the boring.",
+        ],
+      },
+      {
+        heading: "Tip 7: The two habits that end 9 out of 10 runs",
+        paragraphs: [
+          "Habit one: diving for power-ups while the ball is falling. A power-up capsule drops, your brain lights up, and you sprint the paddle across the screen to grab it — while the ball drops through the space you just left. Do the opportunity math: the average power-up is worth a few thousand points at best, and a lost life costs you the entire run's momentum plus whatever the death costs in rhythm. Never abandon a falling ball for a power-up. If you can grab it on the way, grab it. If it costs you position, let it fall.",
+          "Habit two: watching the ball instead of the paddle zone. Beginners track the ball with their eyes the whole way down, then jerk the paddle at the last instant — which is exactly the 250ms reaction trap from Tip 4. Better players do the opposite: they watch the ball only while it climbs, predict the landing spot, park the paddle, and then watch the landing zone with the ball in peripheral vision. Your eyes should live where the action will be, not where it is.",
+          "Kill these two habits and your average run length roughly doubles — not because you got faster, but because you stopped manufacturing your own deaths. Most Breakout deaths are unforced errors, the same way most lost points in our [Minesweeper guide](https://games.tempmaill.tech/blog/how-to-win-minesweeper-tips) come from rushed clicks instead of bad luck. The game punishes impatience far more than it rewards daring.",
+        ],
+      },
+      {
+        heading: "Tip 8: The power-up order that actually pays",
+        paragraphs: [
+          "Not all power-ups are worth the risk of grabbing. Ranked by expected value: first, widen — a 50% wider paddle roughly halves your miss rate, which is the single biggest life-saver in the game. Second, slow — it buys you the reaction margin back for 10 to 15 seconds, exactly when the speed curve gets mean. Third, laser — every laser shot is a guaranteed brick without a bounce, perfect for picking off the last scattered bricks that bounces keep missing.",
+          "Fourth is catch, which lets the ball rest on your paddle so you can aim the next launch deliberately — pair it with the thirds from Tip 1 and it becomes a sniper tool. Last is multiball, and only because of the timing rule from Tip 5: it is the highest-scoring power-up in a full wall and the most dangerous in an empty one. And the shrink power-up? Treat it as a penalty, not a prize — play extra-conservative until it wears off, and never chase anything while you are narrow.",
+          "The grabbing rule from Tip 7 applies to all of them: power-up capsules fall straight down at a fixed speed, so they are predictable — but a falling ball is not. Decision order is always ball first, power-up second. A great rule of thumb: only move for a power-up if the ball is currently above the brick wall. If the ball is anywhere below it, the power-up does not exist. Let it go.",
+        ],
+      },
+      {
+        heading: "Tip 9: The 10-minute drill that doubles your score",
+        paragraphs: [
+          "Theory is cheap; here is the practice routine. Drill one, the tunnel (5 minutes): play three runs where your only goal is to get the ball above the wall by the 20th brick. Do not care about the score, do not care about lives. Three runs, tunnel attempts only. By the third run you will be aiming returns at a column instead of just surviving them.",
+          "Drill two, the thirds (3 minutes): one run where every single return must use a deliberate paddle zone — say it out loud: left third, right third. It feels ridiculous. It also rewires your brain from blocking to steering faster than anything else. Two minutes of deliberate steering beats two hours of mindless bouncing.",
+          "Drill three, the discipline run (2 minutes or one full life): one run where you never move the paddle for a power-up and never chase — park, predict, catch. That is it. Score this run against your average and watch what happens. Ten minutes total, three drills, and you will come back with the two things every high-score player has: aimed returns and a parked paddle. Then chase the leaderboard on [Breakout at PlayZone](https://games.tempmaill.tech/play/breakout) — and when you want a different flavor of score-chasing, our [best free arcade games](https://games.tempmaill.tech/blog/best-free-arcade-games-no-download) roundup has the next obsession waiting.",
+        ],
+      },
+      {
+        heading: "Your 50,000-point run is one tunnel away",
+        paragraphs: [
+          "That is the whole playbook: steer with the thirds, bore the tunnel, farm the top rows, park the paddle, and let multiball print while the ball is slow. None of it requires faster reflexes — it requires a plan, which is why Breakout rewards thinking players the way [2048 rewards patient ones](https://games.tempmaill.tech/blog/how-to-get-high-score-2048-tips). The score-chasing mindset is the same everywhere: pattern over panic, math over muscle memory.",
+          "And the meta-lesson travels. The discipline here — small early corrections, no chasing, risk math on every move — is the same discipline behind our [Flappy Bird high-score guide](https://games.tempmaill.tech/blog/how-to-get-high-score-flappy-bird-tips) and the same reason the whole arcade catalog on the [PlayZone homepage](https://games.tempmaill.tech/) plays better once you think in numbers. Now go bore a tunnel. Your high score is waiting.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
