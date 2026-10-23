@@ -11,7 +11,7 @@ export interface BlogPost {
 export const POSTS: BlogPost[] = [
   {
     slug: "best-free-browser-games-2026",
-    title: "10 Best Free Browser Games to Play in 2026 (No Download Needed)",
+    title: "10 Best Free Browser Games to Play in 2026",
     excerpt:
       "No installs, no signups, no waiting — just click and play. Here are the ten best free browser games worth your time in 2026.",
     date: "2026-10-15",
@@ -458,7 +458,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-snake-game-no-download",
-    title: "Best Free Snake Game No Download: 8 Snake Games You Can Play Right Now",
+    title: "Best Free Snake Game: 8 Snake Games You Can Play Right Now",
     excerpt:
       "Looking for the best free snake game no download required? These 8 snake games play instantly in your browser — classic Snake, io hits, and hidden gems.",
     date: "2026-10-16",
@@ -566,7 +566,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "tetris-tips-and-tricks-for-beginners",
-    title: "Tetris Tips and Tricks for Beginners: 10 Ways to Score Higher",
+    title: "Tetris Tips: 10 Ways Beginners Can Score Higher",
     excerpt:
       "Tetris tips and tricks for beginners: 10 practical ways to stack smarter, clear more lines, and boost your Tetris score starting today.",
     date: "2026-10-16",
@@ -684,7 +684,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "snake-vs-slither-io-2026",
-    title: "Snake vs Slither.io: Which Snake Game Should You Play in 2026?",
+    title: "Snake vs Slither.io: Which Snake Game Should You Play?",
     excerpt:
       "Snake vs Slither.io: which snake game should you play in 2026? Solo classic vs multiplayer io chaos — compared on rules, growth math, strategy, and drama.",
     date: "2026-10-17",
@@ -766,7 +766,7 @@ export const POSTS: BlogPost[] = [
     slug: "how-to-win-minesweeper-tips",
     title: "How to Win Minesweeper Every Time: 8 Tips That Actually Work",
     excerpt:
-      "Want to know how to win Minesweeper consistently? These 8 tips cover the 1-2-1 pattern, chording, flagging math, and how to make smart guesses when logic runs out.",
+      "Win Minesweeper consistently with these 8 tips: the 1-2-1 pattern, chording, flagging math, and smart guesses when logic runs out.",
     date: "2026-10-17",
     readMinutes: 8,
     emoji: "💣",
@@ -852,7 +852,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-puzzle-games-no-download",
-    title: "Best Free Puzzle Games No Download: 10 Browser Puzzlers Worth Your Time",
+    title: "Best Free Puzzle Games: 10 Browser Puzzlers Worth Your Time",
     excerpt:
       "Best free puzzle games with no download: 10 browser puzzlers ranked — 2048, Tetris, Sudoku, Minesweeper — loading in seconds, sharpening your brain.",
     date: "2026-10-18",
@@ -927,7 +927,7 @@ export const POSTS: BlogPost[] = [
     slug: "how-to-solve-sudoku-faster-tips",
     title: "How to Solve Sudoku Faster: 9 Tips and Tricks for Beginners",
     excerpt:
-      "Stuck staring at a Sudoku grid for 40 minutes? These 9 practical tips and tricks for beginners show how to solve Sudoku faster \u2014 cross-hatching, pencil marks, hidden pairs, and the habits that cut a medium puzzle down to minutes.",
+      "Stuck on a Sudoku grid for 40 minutes? These 9 beginner tips \u2014 cross-hatching, pencil marks, hidden pairs \u2014 cut a medium puzzle down to minutes.",
     date: "2026-10-18",
     readMinutes: 8,
     emoji: "\U0001f522",
@@ -1005,7 +1005,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-arcade-games-no-download",
-    title: "Best Free Arcade Games No Download: 10 Instant Browser Arcade Games Ranked",
+    title: "Best Free Arcade Games: 10 Instant Browser Games Ranked",
     excerpt:
       "The 10 best free arcade games no download needed — Tetris, Snake, Breakout, Flappy Wings, Pong and more, ranked for instant browser play.",
     date: "2026-10-19",
@@ -1074,7 +1074,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "how-to-get-high-score-flappy-bird-tips",
-    title: "How to Get a High Score in Flappy Bird: 9 Tips That Actually Work",
+    title: "Flappy Bird: 9 Tips for a High Score That Actually Work",
     excerpt:
       "Stuck at 7? 9 practical tips for how to get a high score in Flappy Bird — tap rhythm math, anticipation, thumb vs keyboard, and the routine past 40.",
     date: "2026-10-19",
@@ -1144,9 +1144,9 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-racing-games-no-download",
-    title: "Best Free Racing Games No Download: 10 Browser Racing Games Ranked (2026)",
+    title: "Best Free Racing Games: 10 Browser Racing Games Ranked",
     excerpt:
-      "Searching for the best free racing games with no download? Here are 10 browser racing games ranked — drift sims, stunt bikes, traffic dodgers — all free, all instant.",
+      "The 10 best free browser racing games ranked: drift sims, stunt bikes, traffic dodgers — all free, all instant, no download.",
     date: "2026-10-20",
     readMinutes: 9,
     emoji: "🏎️",
@@ -1218,9 +1218,9 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "how-to-get-high-score-slither-io-tips",
-    title: "How to Get a High Score in Slither.io: 8 Tips That Actually Work",
+    title: "Slither.io High Score: 8 Tips That Actually Work",
     excerpt:
-      "Want to know how to get a high score in Slither.io? These 8 practical tips cover boost physics, growth math, encircling geometry, and the survival habits that take you from 200 points to 50,000.",
+      "Get a high score in Slither.io with these 8 tips: boost physics, growth math, encircling geometry — from 200 points to 50,000.",
     date: "2026-10-20",
     readMinutes: 8,
     emoji: "🎯",
@@ -1307,7 +1307,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-word-games-no-download",
-    title: "10 Best Free Word Games No Download: Browser Word Games Ranked (2026)",
+    title: "10 Best Free Word Games: Browser Word Games Ranked",
     excerpt:
       "The best free word games with no download: 10 browser word games ranked — daily wordles, anagrams, crosswords, and word battles. All free, all instant.",
     date: "2026-10-21",
@@ -1384,7 +1384,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "how-to-get-high-score-breakout-tips",
-    title: "How to Get a High Score in Breakout: 9 Tips That Actually Work",
+    title: "Breakout High Score: 9 Tips That Actually Work",
     excerpt:
       "How to get a high score in Breakout: 9 practical tips on paddle geometry, the tunnel trick, and brick math — turn a 5,000-point run into 50,000.",
     date: "2026-10-21",
@@ -1480,7 +1480,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "best-free-typing-games-no-download",
-    title: "10 Best Free Typing Games No Download: Browser Typing Games Ranked (2026)",
+    title: "10 Best Free Typing Games: Browser Typing Games Ranked",
     excerpt:
       "The 10 best free typing games with no download — racers, shooters and trainers that build real WPM, ranked for instant browser play in 2026.",
     date: "2026-10-22",
