@@ -1845,6 +1845,95 @@ export const POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-get-high-score-pac-man-tips",
+    title: "How to Get a High Score in Pac-Man: 9 Tips",
+    excerpt:
+      "Pac-Man high score tips that actually work: ghost AI, dot math, fruit values, and the cornering tricks behind a 100,000-point run.",
+    date: "2026-10-24",
+    readMinutes: 11,
+    emoji: "🟡",
+    content: [
+      {
+        paragraphs: [
+          "Pac-Man looks like the simplest arcade game ever made: eat dots, dodge ghosts, do not get caught. Yet most players never break 20,000 points, and the gap between a casual maze wanderer and a player chasing six figures is not reflexes — it is knowledge. If you want to learn how to get a high score in pac-man, you need to stop treating the ghosts as random and start treating the maze as a machine with rules you can exploit. The ghosts have personalities, the dots have exact math, the fruit appears on a schedule, and the energizer is a weapon with a countdown. Learn those four systems and your scores will jump before your reflexes improve at all.",
+          "This guide is built on the original arcade rules, because browser versions of Pac-Man faithfully copy them: a maze with 240 dots, four ghosts with distinct targeting brains, two fruit appearances per level, and a frightened mode that gets shorter every level until it nearly vanishes. We will work through the ghost AI first, then the scoring math, then the movement habits that keep you alive long enough for the math to pay off. By the end you will have a practice plan that takes a 10,000-point player past 50,000 in a week, and explains exactly what the next 50,000 costs.",
+        ],
+      },
+      {
+        heading: "1. The ghosts are not random — each one hunts differently",
+        paragraphs: [
+          "Blinky, the red ghost, is the simplest and the most dangerous: he targets your exact tile, every time, relentlessly. He is the ghost that turns a careless corner into a death, because he never guesses — he chases. Pinky, the pink ghost, targets four tiles ahead of where you are facing, which means she ambushes you: she is not where you are, she is where you are about to be, and if you run in a straight line for more than a second she is already waiting at the end of it.",
+          "Inky, the cyan ghost, is the clever one. He takes Blinky's position, draws a line through your position, and doubles it — his target is the tile twice as far from Blinky as you are, which makes him swing wide and flank you from angles that feel unfair until you understand the geometry. Clyde, the orange ghost, chases you until he gets within eight tiles, then retreats to his home corner in the bottom-left — he is the ghost that seems to give up, and that retreat is exactly what makes him unpredictable, because he switches between hunter and coward on a hair trigger.",
+          "Here is the twist most players never learn: the ghosts do not chase all the time. They alternate between chase mode and scatter mode, on a fixed timer — roughly 7 seconds of scatter, 20 of chase, 7 of scatter, 20 of chase, 5 of scatter, then chase forever — and during scatter each ghost retreats to its own corner of the maze. That timer is your breathing room. When the ghosts suddenly peel away for no visible reason, that is scatter mode, and the correct response is not relief — it is greed, because scatter is when you eat the most dangerous dots for free. A player who knows the mode timer plays a different game from a player who thinks the ghosts just wander.",
+        ],
+      },
+      {
+        heading: "2. Dot math: a perfect level is worth more than you think",
+        paragraphs: [
+          "Every small dot is worth 10 points, and there are 240 of them, so a fully cleared maze pays 2,400 points before anything else happens. That number matters because it reframes the whole game: dots are not the score, they are the entry fee. The real money is in the four energizers and the ghost chains they enable. Eating ghosts in one frightened burst pays 200, then 400, then 800, then 1,600 — a full chain of four is 3,000 points, which is more than clearing the entire maze of dots, and it takes about four seconds when the ghosts are grouped.",
+          "Add the fruit, which appears twice per level — once after 70 dots eaten, once after 170 — and the level total starts to look serious. Level 1 fruit is a cherry worth 100 points, but by level 5 the fruit is an apple worth 700, by level 7 a melon worth 1,000, and by level 9 the Galboss fruit is worth 2,000. A strong level 1, with all dots, one full ghost chain, and both cherries, is worth roughly 5,800 points. A strong level 7, with the same play plus a 1,000-point melon twice, is worth roughly 7,800. The lesson is blunt: players who ignore fruit and eat ghosts one at a time score about half what players who chain and collect score, on identical mazes.",
+        ],
+      },
+      {
+        heading: "3. Cornering: the one movement skill that saves every run",
+        paragraphs: [
+          "Pac-Man turns corners slowly if you wait until the corner to press the direction, and that half-second of hesitation is where most runs end. The fix is pre-turning: hold the next direction before you reach the corner, and the game buffers the input so Pac-Man snaps around the corner at full speed. Every version of the game, browser included, supports this — it is not a trick, it is how the controls were designed. Drill it until your thumb is pressing the turn a full tile early, and your deaths in corners will fall by half in a single session.",
+          "The second cornering rule is never stop moving. A stationary Pac-Man is a dead Pac-Man, because all four ghosts converge on a fixed target faster than you can react. When you are unsure where to go, keep moving in a loop — any loop — while you decide, because a moving target forces the ghosts to re-aim every fraction of a second and buys you the thinking time that standing still never will. This is the same lookahead discipline our [Snake pro guide](https://games.tempmaill.tech/blog/how-to-play-snake-like-a-pro-tips) teaches: plan the turn after the turn you are making, so you are never improvising at a junction with a ghost on your tail.",
+        ],
+      },
+      {
+        heading: "4. The energizer is a weapon, not a panic button",
+        paragraphs: [
+          "Beginners eat an energizer the instant a ghost gets close. Pros eat it when the ghosts are grouped. The difference is worth up to 2,800 points per energizer: a panicked single ghost pays 200, while a deliberate chain of four pays 3,000. The habit to build is herding — when ghosts are scattered, do not touch the energizer; kite them toward it by looping the maze until at least three are within a few tiles of the corner, then eat it and hunt in order of distance, nearest first, so the chain completes before the frightened timer runs out.",
+          "The timer is the catch, and it shrinks as you climb. On level 1, frightened mode lasts about 6 seconds. By level 5 it is down to about 2 seconds, and by level 8 it is effectively zero — the ghosts flash and recover almost instantly. That progression changes the whole strategy: early levels are for chaining ghosts and farming points, later levels are for clearing dots, because the energizer stops being a weapon and becomes a brief scare. Players who keep playing level 9 like level 1 — chasing ghosts that are barely frightened — die chasing 200 points they were never going to collect.",
+        ],
+      },
+      {
+        heading: "5. The side tunnel is an escape hatch, not a shortcut",
+        paragraphs: [
+          "The tunnel on the middle row wraps you from one side of the maze to the other, and it feels like a cheat until you learn its one cruel rule: ghosts move slowly through it, but so do you, and a ghost entering behind you will exit at nearly the same moment you do. The tunnel is for breaking line of sight, not for outrunning anyone — use it when you need the ghosts to lose your trail for two seconds while you reposition, never when a ghost is already inside it with you.",
+          "The advanced tunnel play is the tunnel bait: enter the tunnel slowly with Blinky close behind, then the moment you exit, reverse direction and re-enter, because the ghost's slow tunnel speed means it is still inside when you come back through — you have just put a wall of maze between you and your pursuer for free. Use it once per level at most, because ghosts learn nothing but you will get greedy, and the second tunnel play in one level is how most bait attempts become deaths. One clean escape per level is plenty.",
+        ],
+      },
+      {
+        heading: "6. Fruit timing: appear at 70 and 170 dots, every level",
+        paragraphs: [
+          "Fruit does not appear randomly. It spawns below the ghost house after you eat your 70th dot and again after your 170th, and it sits there for about 9 to 10 seconds before vanishing. That schedule turns fruit into a planning problem, not a luck problem: when you are near 60 dots eaten, start drifting toward the ghost house area, so the cherry is a detour of three tiles instead of a cross-maze suicide run. The players who collect fruit consistently are not faster — they are just already nearby when it appears.",
+          "The fruit value ladder is worth memorizing, because it decides which levels are worth risking a life for. Cherry 100, strawberry 300, orange 500, apple 700, melon 1,000, Galboss 2,000, bell 3,000, key 5,000. A level 7 melon run where you grab both melons is 2,000 points for two detours; a level 11 key run where you grab both keys is 10,000 points, which is more than an entire level of dots and ghost chains combined. Late-game fruit is not a bonus — it is the main scoring event, and the maze route should bend around it.",
+        ],
+      },
+      {
+        heading: "7. Worked example: turning one energizer into 3,000 points",
+        paragraphs: [
+          "Picture the board: you have cleared the bottom half, three ghosts are trailing you in a loose pack near the bottom-left energizer, and Clyde has wandered off to his corner. The beginner eats the energizer immediately and chases the nearest ghost for 200 points while the other two scatter. The pro waits: loop the bottom row once, letting the pack tighten, and watch Clyde — when he drifts back toward the pack, eat the energizer and turn on the nearest ghost first.",
+          "Sequence it: ghost one at 200, because it was two tiles away; ghost two at 400, four tiles further along the same corridor; ghost three at 800, cutting across the bottom row; Clyde, arriving late from his corner, at 1,600, because the frightened timer had three seconds left when he arrived and he was the last one in range. Total: 3,000 points in about five seconds, plus the dots you ate while herding. The same energizer, played impatiently, pays 200. The 2,800-point difference is not skill in any physical sense — it is the five seconds of patience before eating the dot, and patience is the cheapest skill in the game.",
+        ],
+      },
+      {
+        heading: "8. Three death patterns — and the habit that breaks each",
+        paragraphs: [
+          "Death one: the corner trap. You turn into a dead-end corridor with Blinky behind you and nowhere to go. The break is route discipline — never enter a corridor you have not already planned an exit from, and when in doubt, take the long way around the maze edge instead of the shortcut through the middle. Death two: the tunnel ambush. You exit the tunnel into a ghost that entered from the other side. The break is tunnel timing — never enter the tunnel unless you can see all four ghosts on screen, because the one you cannot see is the one waiting at the exit.",
+          "Death three: post-energizer greed. The frightened timer ends while you are chasing the fourth ghost, and it turns around and eats you mid-chase. The break is the flashing rule: when ghosts start flashing white, you have about two seconds left — abandon the chase instantly, no matter how close the ghost is, and put a wall between you. A 1,600-point ghost is not worth a life, and a life is worth every future point in the level. Our [Breakout high-score guide](https://games.tempmaill.tech/blog/how-to-get-high-score-breakout-tips) makes the same expected-value point with paddles instead of ghosts: the points you do not chase are the runs you do not lose.",
+        ],
+      },
+      {
+        heading: "9. Level progression: faster ghosts, shorter scares, one new terror",
+        paragraphs: [
+          "Every level makes the game harder in three measurable ways: Pac-Man and the ghosts both move slightly faster, the frightened timer gets shorter, and from level 5 onward Blinky speeds up dramatically once enough dots are eaten — the famous Cruise Elroy effect, where Blinky stops scattering entirely and chases you at top speed for the rest of the level. Cruise Elroy is the game's difficulty valve: on level 1 it triggers after 20 dots remain, but on later levels it triggers with more dots left, which means the endgame of every level is a sprint against a red ghost that never rests.",
+          "The practical adjustment is to clear dots in a different order as levels rise. Early levels: clear the dangerous middle corridors first while the ghosts are slow, save the safe edges for the Elroy sprint. Late levels: do the opposite — save the energizers for the Elroy phase, because a frightened Blinky, even briefly, is the only breather you get when he is at top speed. Players who use the same route every level plateau around level 4; players who re-route per level keep climbing, because the maze is the same but the game inside it is not. The same re-routing habit pays off across the genre — our [best free arcade games](https://games.tempmaill.tech/blog/best-free-arcade-games-no-download) roundup shows how each arcade classic changes once you stop playing it on autopilot.",
+        ],
+      },
+      {
+        heading: "How to get a high score in pac-man: the 7-day practice plan",
+        paragraphs: [
+          "Day one: ghost school. Play three games with one rule only — name the ghost chasing you out loud before every death. Blinky, Pinky, Inky, Clyde. You will die a lot and learn fast, because naming forces you to watch targeting instead of panicking. Day two: cornering drills. Pre-turn every corner for a full session, no exceptions, even when it sends you the wrong way — the muscle memory matters more than the score today.",
+          "Day three: dot math. Play for level totals, not survival — count your dots, collect both fruit, and note your level 1 total after each game. When it passes 5,000, you are chaining correctly. Day four: energizer patience — do not eat an energizer until at least three ghosts are nearby, even if it means a death. Day five: tunnel discipline, one bait per level maximum. Day six: full games, everything combined, with the flashing rule as your only hard stop. Day seven: three serious runs, and write down every score.",
+          "Most players following this plan break 50,000 within the week, and the jump from 50,000 to 100,000 is the same habits at higher levels: fruit on schedule, chains of four, and zero post-energizer greed. The final number to chase is not a mystery — it is the sum of 2,400 dots per level, 3,000 per energizer chain, and fruit that doubles in value as you climb. Start from the [PlayZone homepage](https://games.tempmaill.tech/), warm up in the [PlayZone arcade category](https://games.tempmaill.tech/category/arcade), or revisit the [best free browser games of 2026](https://games.tempmaill.tech/blog/best-free-browser-games-2026) for the rest of your arcade rotation. The maze has not changed since 1980. You have.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
