@@ -5,7 +5,11 @@ export interface BlogPost {
   date: string;
   readMinutes: number;
   emoji: string;
-  content: { heading?: string; paragraphs: string[] }[];
+  content: {
+    heading?: string;
+    paragraphs: string[];
+    image?: { src: string; alt: string };
+  }[];
 }
 
 export const POSTS: BlogPost[] = [
@@ -19,6 +23,7 @@ export const POSTS: BlogPost[] = [
     emoji: "🎮",
     content: [
       {
+        image: { src: "https://images.pexels.com/photos/3951449/pexels-photo-3951449.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Playing a free browser game on a laptop" },
         paragraphs: [
           "Browser games have quietly become one of the best ways to kill fifteen minutes — or lose an entire evening. No downloads, no 50 GB updates, no accounts. You open a tab, you play. Here are ten free browser games that are actually worth your time in 2026, starting with the classics you can play right here on PlayZone.",
           "A quick note on how this list was built: every game below loads in seconds, costs nothing, and needs no signup to enjoy. We grouped the ten into classics, puzzlers, arcade bursts, and one multiplayer pick — then added the honest buying-guide stuff most listicles skip, like which games survive a wheezing school Chromebook and how to match a game to the exact length of your break.",
@@ -49,6 +54,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/14205160/pexels-photo-14205160.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "A game controller ready for a browser gaming session" },
         heading: "How we picked these",
         paragraphs: [
           "Every game on this list passed five tests. One: it loads in under three seconds on average broadband — if we were staring at a loading bar, it got cut. Two: the core loop is fully free, no energy timers or paywalled levels gating the fun. Three: no mandatory signup; guest play or instant play only. Four: it is playable with just a keyboard, just a mouse, or a touchscreen. Five: it is still fun on the fiftieth session, not just the fifth.",
@@ -64,6 +70,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/7862493/pexels-photo-7862493.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "A gaming setup with a monitor showing a browser game" },
         heading: "Multiplayer browser games worth trying",
         paragraphs: [
           "Game 10: skribbl.io. Drawing and guessing with up to twelve players, rounds of about three minutes, private rooms you share with a single link. It is the party game that needs no console, no controllers, and no explaining — everyone already knows how Pictionary works, and watching a friend attempt to draw 'washing machine' against the clock is timeless comedy. This is our tenth pick because it proves the browser can do social gaming, not just solo time-killers.",
@@ -933,6 +940,7 @@ export const POSTS: BlogPost[] = [
     emoji: "\U0001f522",
     content: [
       {
+        image: { src: "https://images.pexels.com/photos/10285256/pexels-photo-10285256.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "A sudoku grid waiting to be solved" },
         paragraphs: [
           "If you want to know how to solve Sudoku faster, the secret is disappointing in the best way: there is no secret. Speed comes from ditching the habit most beginners share \u2014 staring at one empty cell like it will confess \u2014 and replacing it with a small set of mechanical habits that never fail. A medium Sudoku has 81 cells, 27 units (9 rows, 9 columns, 9 boxes), and roughly 6.7 \u00d7 10\u00b2\u00b9 possible solutions, but you don't solve it with cleverness. You solve it with a system.",
           "I time my solves the way runners time their miles, and the numbers tell the story. My first-ever medium puzzle took 42 minutes of frustrated guessing. Three weeks of deliberate practice \u2014 the nine habits below, fifteen minutes a day \u2014 brought a medium down to 11 minutes, and an easy to under six. Nothing below requires genius or a math degree. Sudoku is pure logic wearing a number costume; you could swap every digit for a color or an emoji and nothing about solving would change. Here is the system.",
@@ -963,6 +971,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/7580981/pexels-photo-7580981.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Working through a number puzzle with pencil marks" },
         heading: "Tip 4: The Difficulty Math \u2014 What 26, 17, and 81 Actually Mean",
         paragraphs: [
           "Sudoku difficulty is not a vibe; it is a number. A standard grid has 81 cells, and puzzle difficulty correlates strongly with how many of those cells start filled \u2014 the givens. Easy puzzles hand you 35 to 45 givens; mediums give you 26 to 34; hards drop to 17 to 25. The famous minimum is 17: mathematicians proved in 2012 that no valid puzzle can have fewer than 17 clues and still have a unique solution. So a 'fiendish' puzzle with 19 givens is not just being mean \u2014 it is operating near the theoretical floor of the game.",
@@ -979,6 +988,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/37703243/pexels-photo-37703243.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "A classic puzzle session on an old-school computer" },
         heading: "Tip 6: Stop Guessing \u2014 Guessing Is the Slow Way Down",
         paragraphs: [
           "Every beginner eventually tries the shortcut: pick a cell with two candidates, guess one, and see what breaks. Mathematically it feels efficient \u2014 a 50/50 shot. In practice it is the single biggest time-sink in casual Sudoku, because a wrong guess does not announce itself. It propagates. You fill ten more cells on a poisoned foundation, hit a contradiction, and then face the worst job in puzzling: unpicking which of your twenty recent moves was the lie. That autopsy costs more minutes than the guess ever saved.",
@@ -1662,6 +1672,7 @@ export const POSTS: BlogPost[] = [
     emoji: "♟️",
     content: [
       {
+        image: { src: "https://images.pexels.com/photos/4800923/pexels-photo-4800923.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Chess pieces set up on a board for a new game" },
         paragraphs: [
           "These chess tips for beginners begin with the uncomfortable truth nobody tells you: you are not losing because you don't know openings. You are losing because of one habit — leaving pieces where the opponent can capture them for free. Coaches call them hanging pieces, and they decide the overwhelming majority of beginner games. The player who hangs fewer pieces wins, almost no matter what else happens. So this guide ignores opening theory on purpose. Here are nine tips in the order that actually saves games, starting with the habit that matters more than the other eight combined.",
           "A word on how to use this: read the first three tips today and play three games using only them. Most beginners try to absorb everything at once and absorb nothing. Chess improvement is sequential — stop the bleeding first, then add weapons. By tip nine you'll have a concrete first-week plan, and in about a month of casual play you will feel the shift: from hoping your opponent blunders to watching them do it while you don't.",
@@ -1700,6 +1711,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/3807741/pexels-photo-3807741.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Planning the next move in an online chess game" },
         heading: "Think in points: the 1-3-3-5-9 trade math",
         paragraphs: [
           "Every piece has a price tag: pawn 1, knight 3, bishop 3, rook 5, queen 9, king priceless. Before any capture sequence, add the numbers. You take a knight (3) with your bishop (3): an even trade, fine if the position is fine. You take a rook (5) with your bishop (3): you're up 2 points — take it every time. Your queen (9) grabs a defended pawn (1) and gets recaptured: you just donated 8 points. Beginners don't lose most material to brilliant combinations; they lose it to arithmetic they didn't do. Thirty seconds of adding decides more games than thirty minutes of 'strategy.'",
@@ -1716,6 +1728,7 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
+        image: { src: "https://images.pexels.com/photos/9227243/pexels-photo-9227243.jpeg?auto=compress&cs=tinysrgb&w=1200", alt: "Puzzle-like thinking behind every chess move" },
         heading: "Spend your clock where it counts: the 80/20 thinking rule",
         paragraphs: [
           "A 10-minute game lasts about 35 to 40 moves, which gives you roughly 15 seconds per move on average. Beginners spend this budget backwards: four minutes agonizing over move 6 (where nothing is happening) and three seconds on move 24 (where a tactic decides the game). Flip it. Spend 80% of your thinking time on 20% of the moves — the ones featuring a capture, a check, or a direct threat, yours or theirs. Quiet developing moves deserve seconds; contact moves deserve minutes. The clock is a resource; budget it like one.",

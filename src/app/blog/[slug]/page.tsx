@@ -27,13 +27,6 @@ export async function generateMetadata({
       url: `${SITE_URL}/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
-      images: [{ url: `${SITE_URL}/opengraph-image.jpg`, alt: post.title }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
-      images: [`${SITE_URL}/opengraph-image.jpg`],
     },
   };
 }
@@ -49,45 +42,14 @@ export default async function BlogPostPage({
 
   const others = POSTS.filter((p) => p.slug !== post.slug).slice(0, 3);
 
-  const url = `${SITE_URL}/blog/${post.slug}`;
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.excerpt,
-    image: `${SITE_URL}/opengraph-image`,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { "@type": "Organization", name: "PlayZone", url: SITE_URL },
-    publisher: {
-      "@type": "Organization",
-      name: "PlayZone",
-      url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
-  };
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: url },
-    ],
-  };
-
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <nav aria-label="Breadcrumb" className="text-sm text-[#a3adc9]">
-        <Link href="/" className="hover:text-white">Home</Link>
-        <span className="mx-2">›</span>
-        <Link href="/blog" className="hover:text-white">Blog</Link>
-        <span className="mx-2">›</span>
-        <span className="text-white font-semibold">{post.title}</span>
-      </nav>
+      <Link
+        href="/blog"
+        className="text-sm font-bold text-[#7c6cf8] hover:text-[#9a8fff]"
+      >
+        ← Back to blog
+      </Link>
       <div className="mt-4 text-5xl">{post.emoji}</div>
       <h1 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
         {post.title}
@@ -106,6 +68,17 @@ export default async function BlogPostPage({
               <h2 className="mb-3 text-2xl font-bold text-white">
                 {block.heading}
               </h2>
+            )}
+            {block.image && (
+              <figure className="mb-5">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={block.image.src}
+                  alt={block.image.alt}
+                  loading="lazy"
+                  className="w-full rounded-2xl border border-[#35406e]"
+                />
+              </figure>
             )}
             {block.paragraphs.map((para, j) => (
               <p
