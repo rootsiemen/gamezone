@@ -1934,6 +1934,86 @@ export const POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-win-mahjong-solitaire-tips",
+    title: "How to Win Mahjong Solitaire: 9 Tips That Work",
+    excerpt:
+      "How to win mahjong solitaire: 9 practical tips on open tiles, matching order, and layout strategy — clear more boards without getting stuck.",
+    date: "2026-10-25",
+    readMinutes: 11,
+    emoji: "🀄",
+    content: [
+      {
+        paragraphs: [
+          "Learning how to win mahjong solitaire is less about luck and more about reading the board like a map. A standard game uses 144 tiles: three suits of 36 (circles, bamboo, and characters, numbered 1 to 9 with four copies of each), 16 wind tiles, 12 dragon tiles, and 8 bonus tiles split between flowers and seasons. Clearing the board means making 72 perfect matches, but the order of those matches decides everything — one careless pair early on can bury the exact tile you need twenty moves later, and the game will not forgive it.",
+          "Most beginners lose the same way: they match whatever pair jumps out first, usually the obvious tiles on the left and right edges, and then wonder why the board locks up with forty tiles left. Winners play the opposite way. They think in layers, not pairs. They ask, before every match, what this match unlocks and what it buries. The nine tips below turn that habit into a system, built around the classic Turtle layout — five stacked layers, 144 tiles — because it is the layout nearly every free browser version deals you first. If you only remember one idea, make it this: in mahjong solitaire, the best match is rarely the easiest one. It is the one that opens the board.",
+        ],
+      },
+      {
+        heading: "How to win mahjong solitaire: open tiles first, always",
+        paragraphs: [
+          "A tile is only playable — called free or open — when it meets two conditions: no tile sits directly on top of it, and at least one of its long sides (left or right) is clear. A tile wedged between two neighbours on the same row is dead until one neighbour goes, no matter how badly you want its match. That single rule explains most lost games. Beginners stare at matching faces; experienced players stare at edges and layers, because the free tiles are the only moves that exist.",
+          "So start every board with a scan, not a match. Sweep the top layer first, then the left and right edges of each row, and count your playable pairs before touching anything. If you see four identical tiles and only two are free, those two are your move — the buried ones are not options yet, they are future rewards. Our [best free mahjong games](https://games.tempmaill.tech/blog/best-free-mahjong-games-no-download) roundup is a good place to practise this scan, because switching layouts teaches your eye to find free tiles faster than replaying one board ever will. Ten seconds of scanning saves ten minutes of regret.",
+        ],
+      },
+      {
+        heading: "Clear the layers before the edges",
+        paragraphs: [
+          "The Turtle layout stacks five layers, and the top layers are the board's roof: every tile on layer five sits on tiles below it, and nothing underneath can move until the roof comes off. Yet the roof is exactly what beginners ignore, because the top tiles look lonely and unimportant next to the busy rows below. Flip the instinct. Your first ten matches should mostly come from the highest layers available, even if easier pairs are sitting on the bottom row begging to be taken.",
+          "Here is why the math favours top-down play. A single top tile typically covers two to four tiles beneath it, and each of those may cover more tiles in turn. Removing one roof tile can therefore unlock a chain of five or six tiles over the next few moves, while removing a bottom-edge tile unlocks exactly nothing above it — it only empties a space that was already playable. Think of it as interest: top matches pay compound interest in future moves, edge matches pay nothing. Clear down to the base layer in the centre first, and the edges will still be there when you need them.",
+        ],
+      },
+      {
+        heading: "The blocking score: count what each match frees",
+        paragraphs: [
+          "When two or more pairs are available, do not guess — score them. Give each candidate pair a blocking score: count the tiles sitting directly on top of either tile, plus the tiles on the same row whose side is blocked only by either tile. Add the two numbers together. The pair with the higher score is almost always the right move, even when the lower-scoring pair looks more satisfying.",
+          "Try it on a typical mid-game board. Pair A is two 5 of bamboo on the open edges: nothing sits on either tile, and neither blocks a neighbour, so its blocking score is 0. Pair B is two red dragons, one on layer three covering two tiles below and one on layer two whose removal frees a wind tile trapped beside it — blocking score 3. Matching pair A feels productive because tiles disappear, but the board is exactly as stuck as before. Matching pair B removes the same two tiles and creates three new moves. Over 72 matches, always picking the higher blocking score is the difference between a board that opens up and a board that slowly strangles itself. Write the number down mentally for a week and it becomes automatic.",
+        ],
+      },
+      {
+        heading: "Match long rows and identical pairs in the right order",
+        paragraphs: [
+          "The trickiest decisions involve four identical tiles, because you have a choice of which two to match — and the wrong choice strands the other two. The rule is simple: match the pair that leaves the remaining two still playable. If two copies sit on the top layer and two sit buried under other tiles, match the top two and the buried ones become your future pair. If you instead match one top tile with one buried tile, you may leave a single copy trapped under a layer with no partner in sight.",
+          "Long rows deserve the same thinking. When a row holds six or eight tiles in a line, clearing it from one end creates a sliding wall of newly free tiles; clearing it from the middle splits it into two short stubs that each need separate rescue. Always work a long row from the end that has the most tiles stacked above it, because that end is doing double duty — it frees the row and drops the roof at the same time. This is the same pattern logic that makes puzzle games click generally, and it is why players who enjoy this kind of ordering also tend to love the logic chains in our [how to solve Sudoku faster](https://games.tempmaill.tech/blog/how-to-solve-sudoku-faster-tips) guide: both games reward you for solving the constrained part of the board first.",
+        ],
+      },
+      {
+        heading: "Flowers, seasons, and the pairs you should NOT rush",
+        paragraphs: [
+          "Flowers and seasons are the board's wildcards: any flower matches any flower, and any season matches any season. That gives you eight flexible tiles forming four easy pairs — and that flexibility is precisely why you should not burn them early. A flower pair is a get-out-of-jail card. Spend it on move five because it is convenient, and on move fifty, when you are one pair away from unblocking the centre, it is gone.",
+          "Hold all four flower tiles and all four season tiles until at least half the board is cleared, unless a flower or season tile is physically blocking a stack you need to open. The same restraint applies, in a smaller way, to winds and dragons: each wind appears four times, each dragon four times, so a wind pair matched badly can leave two winds separated by layers that never open together. Treat every four-of-a-kind group as a set of two future pairs, not as two disposable matches, and decide which two go first by blocking score. Patience with flexible tiles is what separates a 60-tile collapse from a full clear.",
+        ],
+      },
+      {
+        heading: "The 3 traps that end Turtle boards early",
+        paragraphs: [
+          "Trap one is the centre column trap. The Turtle's middle is the tallest stack, and players who clear the pretty outer wings first end up with a lonely central tower whose tiles have no partners left — the partners were matched away in the wings. Always keep at least one playable pair in the centre for every three pairs you take from the wings, so the tower shrinks in step with the rest of the board.",
+          "Trap two is one-sided clearing. Clearing only the left side feels like progress, but it leaves a solid right wall where tiles have both neighbours blocked and no way out — a wall can only be dismantled from its ends, and if both ends are buried, it is permanent. Alternate sides every few matches, like unzipping from both ends. Trap three is the last-pair trap: two identical tiles end up stacked directly on top of each other, or side by side with both outer sides blocked, and no other copy of that tile exists. The moment you spot a pair where one copy sits on top of another tile of the same face, flag it mentally and clear the stack above it before touching anything else in that group.",
+        ],
+      },
+      {
+        heading: "When to undo, shuffle, or restart",
+        paragraphs: [
+          "Undo is a teaching tool, not a crutch. Use it when you spot a mistake within three moves — you matched a 0-blocking-score pair while a 3-point pair was available, or you broke a four-of-a-kind set. Undoing further back rewrites the board you have already learned, and most players who undo ten moves just repeat the same error with different tiles. A good limit is three undos per game while learning, zero while chasing a personal best.",
+          "Shuffle and restart need a colder calculation. If no playable pair exists and more than 100 tiles remain, the board is almost certainly unwinnable without a shuffle — take it, because shuffling only rearranges the free tiles and costs nothing. If fewer than 30 tiles remain and you are stuck, restart instead: a fresh Turtle board takes about 12 minutes on average, while nursing a 25-tile corpse can eat 20 minutes and still fail, since the last pairs are the ones most likely to be stacked on each other. And if you are stuck between 30 and 100 tiles, undo three moves first and look again — roughly half of mid-game locks are one bad match deep, not genuinely dead.",
+        ],
+      },
+      {
+        heading: "A worked Turtle board: 12 moves to open the centre",
+        paragraphs: [
+          "Picture the opening Turtle: the single top tile is a 2 of circles, sitting over a second layer of four tiles. Moves 1 to 3: match the top tile with the only other free 2 of circles on the right edge, then take the two newly exposed second-layer tiles that now match — a 7 of bamboo pair. You have removed five tiles, but more importantly the centre column is now two layers shorter and four new tiles are free.",
+          "Moves 4 to 8: work the second layer outward, always taking the pair with the higher blocking score — a red dragon pair that frees two tiles below it beats a character pair that frees none, even though the characters are easier to spot. Moves 9 to 12: the third layer opens in the middle, and here comes the discipline test — a flower pair is now free, and so is a wind pair covering the centre. Take the wind pair. The flowers wait. By move 12 you have cleared 24 tiles, a third of the roof is gone, and every remaining layer has at least two playable pairs. That is what a healthy board looks like at the quarter mark: not empty, but open in every direction. Compare that with the edge-first player at move 12, who has also cleared 24 tiles but whose centre tower is untouched and whose wings are already running out of pairs.",
+        ],
+      },
+      {
+        heading: "Your 7-day mahjong practice plan",
+        paragraphs: [
+          "Day one: play three Turtle boards with one rule only — never match a pair with a blocking score of 0 while a higher-scoring pair is available, even if it means waiting. Day two: add the top-down rule, clearing the highest layer first for the first fifteen moves of every board. Day three: practise four-of-a-kind ordering — before matching any set of four, say out loud which two you are taking and why the other two stay playable.",
+          "Day four: play a board where you hold all flowers and seasons until 72 tiles are gone, and notice how often they save you late. Day five: deliberately practise the traps — clear one side only for ten moves, watch the wall form, then restart and clear alternately to feel the difference. Days six and seven: full games, all rules combined, with a three-undo limit. Most players following this plan clear their first full Turtle board within the week, and the second one comes much faster, because the skill was never memory — it was the habit of asking, before every match, what this match opens. Start on the [PlayZone homepage](https://games.tempmaill.tech/), warm up in the [puzzle games category](https://games.tempmaill.tech/category/puzzle), or revisit the [best free puzzle games](https://games.tempmaill.tech/blog/best-free-puzzle-games-no-download) and the [best free browser games of 2026](https://games.tempmaill.tech/blog/best-free-browser-games-2026) to round out your rotation. The tiles have not changed in a hundred years. Your reading of them has.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
